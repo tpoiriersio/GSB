@@ -32,8 +32,9 @@
             this.lb_stockDispo = new System.Windows.Forms.Label();
             this.cb_article = new System.Windows.Forms.ComboBox();
             this.bt_article = new System.Windows.Forms.Button();
-            this.lv_commande = new System.Windows.Forms.ListView();
             this.lb_commande = new System.Windows.Forms.Label();
+            this.dgv_commande = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_commande)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_stockDispo
@@ -65,16 +66,6 @@
             this.bt_article.Text = "Commander";
             this.bt_article.UseVisualStyleBackColor = true;
             // 
-            // lv_commande
-            // 
-            this.lv_commande.HideSelection = false;
-            this.lv_commande.Location = new System.Drawing.Point(556, 361);
-            this.lv_commande.Name = "lv_commande";
-            this.lv_commande.Size = new System.Drawing.Size(311, 86);
-            this.lv_commande.TabIndex = 3;
-            this.lv_commande.UseCompatibleStateImageBehavior = false;
-            this.lv_commande.SelectedIndexChanged += new System.EventHandler(this.ListView1_SelectedIndexChanged);
-            // 
             // lb_commande
             // 
             this.lb_commande.AutoSize = true;
@@ -85,6 +76,15 @@
             this.lb_commande.TabIndex = 4;
             this.lb_commande.Text = "Récapitulatif de votre commande";
             // 
+            // dgv_commande
+            // 
+            this.dgv_commande.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv_commande.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_commande.Location = new System.Drawing.Point(587, 367);
+            this.dgv_commande.Name = "dgv_commande";
+            this.dgv_commande.Size = new System.Drawing.Size(275, 98);
+            this.dgv_commande.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,14 +92,15 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(903, 477);
+            this.Controls.Add(this.dgv_commande);
             this.Controls.Add(this.lb_commande);
-            this.Controls.Add(this.lv_commande);
             this.Controls.Add(this.bt_article);
             this.Controls.Add(this.cb_article);
             this.Controls.Add(this.lb_stockDispo);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_commande)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,8 +111,8 @@
         private System.Windows.Forms.Label lb_stockDispo;
         private System.Windows.Forms.ComboBox cb_article;
         private System.Windows.Forms.Button bt_article;
-        private System.Windows.Forms.ListView lv_commande;
         private System.Windows.Forms.Label lb_commande;
+        private System.Windows.Forms.DataGridView dgv_commande;
     }
 }
 
