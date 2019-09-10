@@ -29,7 +29,61 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.lb_stockDispo = new System.Windows.Forms.Label();
+            this.cb_article = new System.Windows.Forms.ComboBox();
+            this.bt_article = new System.Windows.Forms.Button();
+            this.lv_commande = new System.Windows.Forms.ListView();
+            this.lb_commande = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lb_stockDispo
+            // 
+            this.lb_stockDispo.AutoSize = true;
+            this.lb_stockDispo.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.lb_stockDispo.Location = new System.Drawing.Point(35, 59);
+            this.lb_stockDispo.Name = "lb_stockDispo";
+            this.lb_stockDispo.Size = new System.Drawing.Size(94, 13);
+            this.lb_stockDispo.TabIndex = 0;
+            this.lb_stockDispo.Text = "Stock disponible : ";
+            this.lb_stockDispo.Click += new System.EventHandler(this.Label1_Click);
+            // 
+            // cb_article
+            // 
+            this.cb_article.FormattingEnabled = true;
+            this.cb_article.Location = new System.Drawing.Point(587, 59);
+            this.cb_article.Name = "cb_article";
+            this.cb_article.Size = new System.Drawing.Size(121, 21);
+            this.cb_article.TabIndex = 1;
+            this.cb_article.Text = "Liste des articles :";
+            // 
+            // bt_article
+            // 
+            this.bt_article.Location = new System.Drawing.Point(750, 59);
+            this.bt_article.Name = "bt_article";
+            this.bt_article.Size = new System.Drawing.Size(75, 23);
+            this.bt_article.TabIndex = 2;
+            this.bt_article.Text = "Commander";
+            this.bt_article.UseVisualStyleBackColor = true;
+            // 
+            // lv_commande
+            // 
+            this.lv_commande.HideSelection = false;
+            this.lv_commande.Location = new System.Drawing.Point(556, 361);
+            this.lv_commande.Name = "lv_commande";
+            this.lv_commande.Size = new System.Drawing.Size(311, 86);
+            this.lv_commande.TabIndex = 3;
+            this.lv_commande.UseCompatibleStateImageBehavior = false;
+            this.lv_commande.SelectedIndexChanged += new System.EventHandler(this.ListView1_SelectedIndexChanged);
+            // 
+            // lb_commande
+            // 
+            this.lb_commande.AutoSize = true;
+            this.lb_commande.Location = new System.Drawing.Point(626, 333);
+            this.lb_commande.Name = "lb_commande";
+            this.lb_commande.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb_commande.Size = new System.Drawing.Size(163, 13);
+            this.lb_commande.TabIndex = 4;
+            this.lb_commande.Text = "Récapitulatif de votre commande";
             // 
             // Form1
             // 
@@ -38,14 +92,26 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(903, 477);
+            this.Controls.Add(this.lb_commande);
+            this.Controls.Add(this.lv_commande);
+            this.Controls.Add(this.bt_article);
+            this.Controls.Add(this.cb_article);
+            this.Controls.Add(this.lb_stockDispo);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lb_stockDispo;
+        private System.Windows.Forms.ComboBox cb_article;
+        private System.Windows.Forms.Button bt_article;
+        private System.Windows.Forms.ListView lv_commande;
+        private System.Windows.Forms.Label lb_commande;
     }
 }
 
