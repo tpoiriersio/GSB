@@ -46,7 +46,6 @@
             this.lb_stockDispo.Size = new System.Drawing.Size(94, 13);
             this.lb_stockDispo.TabIndex = 0;
             this.lb_stockDispo.Text = "Stock disponible : ";
-            this.lb_stockDispo.Click += new System.EventHandler(this.Label1_Click);
             // 
             // cb_article
             // 
@@ -56,6 +55,7 @@
             this.cb_article.Size = new System.Drawing.Size(121, 21);
             this.cb_article.TabIndex = 1;
             this.cb_article.Text = "Liste des articles :";
+            this.cb_article.SelectedIndexChanged += new System.EventHandler(this.Cb_article_SelectedIndexChanged);
             // 
             // bt_article
             // 
@@ -99,7 +99,6 @@
             this.Controls.Add(this.lb_stockDispo);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_commande)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
