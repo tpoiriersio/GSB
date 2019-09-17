@@ -4,18 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Médicament {
+public class medicament {
 
-    public Médicament() {
+    public int idMed;
+
+    public string nomMed;
+
+    public string quantiteMed;
+
+    public string prixMed;
+
+    public medicament() {
     }
 
-    public void idMed;
 
-    public void nomMed;
-
-    public void quantiteMed;
-
-    public void prixMed;
 
 
 

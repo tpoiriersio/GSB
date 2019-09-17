@@ -4,17 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Commande {
+public class commande {
 
-    public Commande() {
+    public int idCommande;
+
+    public DateTime date;
+
+    public DateTime heure;
+
+    public int quantiteEnStock;
+
+    public commande() {
     }
-
-    public void idCommande;
-
-    public void date;
-
-    public void heure;
-
 
 
 

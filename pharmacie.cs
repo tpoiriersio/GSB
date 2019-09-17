@@ -6,10 +6,12 @@ using System.Text;
 
 public class pharmacie : officine {
 
+    public int numeroRegistre;
+
     public pharmacie() {
     }
 
-    public void numeroRegistre;
+
 
 
 

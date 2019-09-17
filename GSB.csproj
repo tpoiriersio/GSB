@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commande.cs" />
-    <Compile Include="Entré en stock.cs" />
+    <Compile Include="entreEnStock.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
