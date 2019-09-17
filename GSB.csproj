@@ -46,12 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commande.cs" />
+    <Compile Include="Entré en stock.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fournir.cs" />
+    <Compile Include="Interface1.cs" />
+    <Compile Include="Médicament.cs" />
+    <Compile Include="officine.cs" />
+    <Compile Include="parapharmacie.cs" />
+    <Compile Include="pharmacie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
